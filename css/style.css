@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .6s !important;
+    -webkit-transition: .6s !important;
+    -moz-transition: .6s !important;
+    -ms-transition: .6s !important;
+    -o-transition: .6s !important;
+}
+:root {
+    --primary:#BF9B30;
+    --Green:#34A853;
+    --Red:#1A1919;
+    --Grey:#D0D0D0;
+    --Black:#000000;
+    --white:#fff;
+    --overlay-bage :#1a1919f1;
+    --bg-cards:#00000040;
+    --hover:#f0c33f;
+    --background-input: #ffffff1e ;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #0000007c;
+    box-shadow: 0 0 15px #ddd inset;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #f0c33f;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.toop {
+    position: fixed;
+    bottom: 10%;
+    right: 4%;
+    z-index: 5;
+}
+.toop img {
+    width: 70px;
+}
+.toop img:hover {
+    opacity: .85;
+    transform: translateY(-16px);
+    -webkit-transform: translateY(-16px);
+    -moz-transform: translateY(-16px);
+    -ms-transform: translateY(-16px);
+    -o-transform: translateY(-16px);
+}
+body {
+    background-color: var(--primary);
+}
+.soc-med {
+    top: 32%;
+    left: -5%;
+    padding: 10px 20px;
+    position: fixed;
+    z-index: 5;
+    background-color: #fffffff1;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.soc-med:hover {
+    left: -1%;
+}
+.soc-med a {
+    font-size: 22px;
+    padding: 5px;
+    display: block;
+    margin: 5px 0;
+}
+.soc-med a:hover {
+    opacity: .75;
+}
+.navbar-toggler-ico {
+    color: var(--white) !important;
+    font-size: 30px;
+    outline: 0 !important;
+    border: 0 !important;
+    transition: .4s !important;
+    -webkit-transition: .4s !important;
+    -moz-transition: .4s !important;
+    -ms-transition: .4s !important;
+    -o-transition: .4s !important;
+}
+.navbar-toggler-ico:hover svg ,.navbar-toggler:focus svg {
+    color: var(--hover) !important;
+}
+.navbar-toggler {
+    outline: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+  background-color: #cbbcb1;
+}
+
+.mask-custom {
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.404);
+}
+.navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: 3px;
+}
+.navbar-brand:hover {
+    text-shadow: 5px 5px 15px var(--hover) , -5px -5px 15px var(--hover);
+}
+.bg-image{
+    padding: 180px  0;
+}
+header {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/wallpaperflare.com_wallpaper\ \(1\).jpg);
+}
+.nav-item .nav-link:hover {
+    color: var(--primary) !important;
+
+}
+.nav-item .nav-link:hover~.line-nav {
+    background-color: var(--primary);
+    width: calc(100% - 8px);
+}
+.text-div .btn {
+    background-color: var(--primary) !important;
+    border: 0 !important;
+    font-weight: 500;
+    font-size: 18px;
+
+}
+.text-div .btn:hover {
+    background-color: var(--hover) !important;
+    letter-spacing: 2px !important;
+}
+.line-nav {
+    height: 2px;
+    width: 10px;
+    background-color: #fff;
+    margin-left: 8px;
+    margin-top: -3px;
+}
+.home22 {
+    color: var(--primary) !important;
+}
+.home22~.line-nav {
+    background-color: var(--primary);
+    width: calc(100% - 8px);
+}
+.sec1 {
+    position: relative;
+    width: 80%;
+    margin: 0 auto !important;
+}
+.big-card {
+    width: 45%;
+    height: 100%;
+}
+.big-cardtp {
+    margin-top: 80px;
+}
+.smal-card {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 151px !important;
+    height: 45%;
+    width: 100%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.smal-cardtp1 , .smal-cardtp2 {
+    margin-top: 10%;
+}
+.smal-card1 {
+    background-image: url(../images/wallpaperflare.com_wallpaper\ \(2\).jpg);
+}
+.smal-card2 {
+    background-image: url(../images/wallpaperflare.com_wallpaper\ \(4\).jpg);
+}
+.smal-cardtp1 {
+    background-image: url(../images/wallpaperflare.com_wallpaper\ \(3\).jpg);
+}
+.smal-cardtp2 {
+    background-image: url(../images/wallpaperflare.com_wallpaper\ \(5\).jpg);
+}
+.smal-card:after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left:0;
+    background-color: var(--primary);
+    opacity: 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: .7s;
+}
+.smal-card:hover::after {
+width: 100%;
+height: 100%;
+opacity: .4;
+
+}
+.smal-card::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    bottom: 0;
+    right:0;
+    background-color: var(--primary);
+    opacity: 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: .7s !important;
+    -webkit-transition: .7s !important;
+    -moz-transition: .7s !important;
+    -ms-transition: .7s !important;
+    -o-transition: .7s !important;
+    transition-delay: .4s !important;
+}
+.smal-card:hover::before { 
+    width: 100%; 
+    height: 100%;
+    opacity: .4;
+
+}
+.img-fixed {
+    background-image: url(../images/fixed1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.ovarlay {
+    background-color: #bf9b3052;
+}
+.sec2 {
+    background-image: url(../images/wallpaperflare.com_wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec22 {
+    padding: 150px 0;
+    width: 80%;
+    margin: 0 auto !important;
+}
+h2 {
+    color: var(--primary);
+    font-weight: 700 !important;
+}
+.cards12 {
+    margin-top: 30px;
+}
+.cards12 .card {
+    background-color: transparent !important;
+    color: var(--white);
+    border: 0;
+    text-align: center;
+}
+.cards12 .card img{
+    width: 150px;
+    margin: 15px auto;
+    opacity: .5;
+    cursor: pointer;
+}
+.cards12 .card:hover img {
+    opacity: 1;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.img-fixed1  {
+    background-image: url(../images/wallpaperflare.com_wallpaper\ \(7\).jpg);
+}
+.sec3 {
+    background-image: url(../images/wallpaperflare.com_wallpaper\ \(8\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu-cards {
+    padding: 100px 0;
+    width: 80%;
+    margin: 0 auto !important;
+}
+.imgs-menu img {
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    opacity: .6;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.menu-cardd1:hover .imgs-menu img {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    opacity: 1;
+}
